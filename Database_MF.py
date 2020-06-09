@@ -145,12 +145,12 @@ class Student:
         self.Student_Table['show']='headings'
 
         self.Student_Table.column("Roll",width=100)
-        self.Student_Table.column("Name",width=100)
-        self.Student_Table.column("Email",width=100)
+        self.Student_Table.column("Name",width=150)
+        self.Student_Table.column("Email",width=250)
         self.Student_Table.column("Gender",width=100)
-        self.Student_Table.column("Contact",width=100)
+        self.Student_Table.column("Contact",width=150)
         self.Student_Table.column("DOB",width=100)
-        self.Student_Table.column("Address",width=150)
+        self.Student_Table.column("Address",width=350)
         self.Student_Table.pack(fill=BOTH,expand=1)
         self.Student_Table.bind("<ButtonRelease-1>",self.get_cursor)
         self.fetch_data()
